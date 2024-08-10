@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Exemplo de Hover</title>
+    <style>
+        
+        body{
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-image: linear-gradient(to top, #91F2E9,#260101 );
+            border-radius: 15px  ;
+            box-shadow: 10px 10px 20px #275950;
+        }
+        div > p {
+            display: none;
+        }
+
+        div:hover > p{
+         
+            text-align: center;
+            display: block;
+            color: white;
+            background-color: red;
+            width: 600px;
+        }
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passse o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+    <p>Fim do exemplo</p>
+    
+</body>
+</html>

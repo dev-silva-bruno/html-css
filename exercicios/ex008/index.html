@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de texto</title>
+    <style>
+        mark{
+            background-color: rgb(82, 190, 82);
+        }
+    </style>
+</head>
+<body>
+    <h1>principais formatações</h1>
+    <h2>Negrito ou destaque</h2>
+    <p>nesssa frase temos um <b>termo em negrito </b> usando a tag B</p>
+    <!--existem 2 maneiras para colocar neguito, semantica e não semntica. a não semantica é pela FORMA, exemplo a cima usando a tag B-->
+    <p>Nesta frase, tem um <strong>terma em destaque</strong> usando a tag STRONG</p>
+    <!--Esse termo é semantico, visualmente não tem difereça nenhuma, mas o Strong alem da froma que queremos ela da um sentido na frase-->
+    <h2>Italico / enfase</h2>
+    <p>Nesta frase, temos um <i>termo em Italíco </i>usando a tag I </p>
+    <!--a tag I não é semantica-->
+    <!--vc pode selecionar a frase da modificação no caso do exemplo o italico selecionando oq voce quer alterar e clicando "ctrl + shift + p" e rocurar na bara acima "abb" e selecionar "warp with abbreviation" e usar a tag da sua modificação que no nosso caso é o I e logo depois apertar enter-->
+    <!--nesse caso ele só tem forma, ele ta por ta, diferente da semantica-->
+    <p>nessa frase, temos um <em>termo em ênfase</em> usando a tag EM </p>
+    <!-- em semantica, nos olhos da programação esse tem um significado-->
+     <h2>Testo marcado</h2>
+     <p>pdemos criuar tambem<mark> um texto marcado </mark>com a tag MARK</p>
+     <!--A principio a tag MARK ainda não foi reconhecida mas voce pode usar-->
+     <!-- trocar a cor do marcado é com CSS pq cor é forma e não significado-->
+      <!--deixando meu caminho andado é deixa dentro da tag um parametro chamado STYLE, mas ai ja é CSS-->
+      <p>e no outro paragrafo temos <mark>outro texto marcado</mark> no final </p>
+      <!--como podemos ver ele não herda a caracteristica do ultimo sendo assim pode fazer as marcaçoes livremente-->
+      <!--caso queira colocar varios marcadores IGUAIS é so criar uma tag STYLE no cabeeçalho e escolher a cor e assim todos os mark serão da cor selecionada-->
+      <p>este é um paragrafo teste pessoal depois do parametro feito no cabeçalho, e <mark>o texto marcado </mark>está da mesma cor</p>
+      <!--como foi dito o paragrafo foi feito depois mas assim como os outros ele está da mesma cor por causa do parametro, podendo modificar como quiser com mais facilidade-->
+      <h2>Texto grande e pequeno</h2>
+      <p>estamos criando um <big>texto grande</big> e um <small>texto pqueno</small> nesse paragrafo</p>
+      <!--o big ainda funciona mas ele está obsoleto-->
+      <h2>Texto deleteado</h2>
+      <p>Podemos marcar<del> um texto como excluido</del> para indicar que ele deve ser lido mas não considerado</p>
+      <h2>texto inserido</h2>
+      <p>podemos marcar um <ins>texto como inserido</ins> para dar enfase e indicar que ele foi adicionado depois</p>
+      <!--esse cria um sublinhado igual ao U mas esse é semantica e o U não é, cuidado-->
+      <p>existe tambem o <u>sublinhado</u> com a tag U</p>
+      <!--mas lembresse que a tag U não é semantica-->
+      <h2>Texto sobrescrito</h2>
+      <p>Para inserir coisa do tipo x<sup>20</sup>+3</p>
+      <h2>texto subscrito</h2>
+      <p>Para ensirerir coisa do tipo H<sub>2</sub>O</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Voce pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">reposítorio público no GitHub</a></p>
+    <p>Você tambem pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+    <!--O 'target, rel' criam uma nova guia deixando a sua pagina separad assim o cliente não perne o acesso com o teu site-->
+    <h2>Usando links internos</h2>
+    <!-- vai fazer uma relação com outra pagina que está dentro do nosso servidor-->
+     <p>Esta é a primeira pagina do site. Se quiser também a minha <a href="pag002.html" rel="next" target="_self">Segunda página</a></p>
+     <!--para links internos do mesmo servidor não precisa de url des que esteja na mesma pasta, e você pode colocar uma ancora de volta assim como no exemplo-->
+     <!--usando o 'rel=next, prev' voce informa para o navegador que o usuario está indo para a proxima pagina, facilita o mecanismo de busca 'encontra' dizendo qual sera a proxima pagina e assim na outra dizendo para onde ela vai voltar-->
+     <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+     <!--esse exemplo mostra a forma certa de colocar um link interno só que em outra pasta-->
+     <h1>Links para download</h1>
+     <ul>
+        <li><a href="livro/curiculo.pdf.pdf" download="curiculo.pdf" type="application/pdf">Baixar curriculo em PDF</a></li>
+        <li><a href="livro/curriculo.zip.zip" download="curiculo.zip" type="application/zip">Baixar curriculo ZIP</a></li>
+     </ul>
+     <!--iana.org/assignments/media types - olhar o site para ver qual types é a acerta para o tipo que arquivos que voce quer deixar download disponivel-->
+    
+</body>
+</html>
