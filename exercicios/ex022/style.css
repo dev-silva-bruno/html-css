@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    text-align: center;
+    height: 100px;
+   
+    background-image: url(imagens/wallpaper004.jpg);
+}
+header h1{
+    padding: 20px;
+}
+main{
+    text-indent: 15px;
+    text-align: justify;
+    margin: 0px 10px;
+}
+aside.fundo{
+    height: 97vh;
+    background-repeat: repeat-x;
+    background-size: 200px;
+    height: 220px ;
+
+}
+aside#f1{
+    background-image: url('imagens/wallpaper001.jpg');
+}
+
+article  aside#f2{
+   background-image: url('imagens/wallpaper002.jpg');
+}
+article{
+    background-color: snow;
+    margin: 10px;
+}
+article h2{
+    margin-top: 10px;
+    margin: auto;
+}
+
+
