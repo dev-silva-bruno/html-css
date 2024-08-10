@@ -4,41 +4,70 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-repeat: repeat;
+    background-size: 100px;
+}
 header{
-    text-align: center;
-    height: 100px;
-   
-    background-image: url(imagens/wallpaper004.jpg);
+    height: 150px;
+    background-image: url(imagens/wallpaper005.jpg);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.192);
 }
 header h1{
-    padding: 20px;
+    text-align: center;
+    padding: 30px;
 }
 main{
-    text-indent: 15px;
+    text-indent: 20px;
     text-align: justify;
-    margin: 0px 10px;
-}
-aside.fundo{
-    height: 97vh;
-    background-repeat: repeat-x;
-    background-size: 200px;
-    height: 220px ;
-
-}
-aside#f1{
-    background-image: url('imagens/wallpaper001.jpg');
-}
-
-article  aside#f2{
-   background-image: url('imagens/wallpaper002.jpg');
-}
-article{
-    background-color: snow;
-    margin: 10px;
-}
-article h2{
-    margin-top: 10px;
+    max-width: 800px;
+    background-image: url('imagens/wallpaper006.jpg');
+    background-repeat: repeat;
     margin: auto;
+    margin-bottom: 20px;
 }
-
-
+main article{
+    margin: 0px 2px;
+}
+article.imagem1{
+    border: 0.2px solid rgba(0, 0, 0, 0.226);
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.158); 
+}
+article.imagem2{
+    border: 0.2px solid rgba(0, 0, 0, 0.226);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.185);
+}
+article#f1{
+    background-image: url('imagens/wallpaper001.jpg');
+    background-repeat: repeat;
+}
+article#f2{
+    background-image: url('imagens/wallpaper002.jpg');
+    background-position: top right;
+}
+aside{
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.151);
+}
+aside h1{
+    font-weight: bolder;
+    font-size: 2em;
+}
+footer{
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.199);
+    background-color: aqua;
+  
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+footer a:hover{
+    text-decoration: dashed;
+    color: blueviolet;
+}
