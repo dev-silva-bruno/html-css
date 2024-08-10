@@ -9,7 +9,7 @@ body{
     background-repeat: repeat;
     background-size: 100px;
 }
-header{
+header#principal{
     border: 0.1px solid rgba(0, 0, 0, 0.062);
     height: 150px;
     background-image: url(imagens/wallpaper006.jpg);
