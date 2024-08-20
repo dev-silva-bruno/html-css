@@ -10,16 +10,33 @@
         }
         table{
             width: 400px;
-            
+            position: relative;
             border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(185, 185, 185);
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
         thead, tfoot{
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;/*coloquei (o) mas ficou uma margem*/
+            background-color: #383838;
+        }
+        tbody > tr:nth-child(odd){/* 2n-1 */
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){/* 2n */
+            background-color: lightgray;
         }
         td.num{
             text-align: right;
@@ -30,6 +47,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- ANATOMIA DAS TABELAS
      TABLE
+        CAPTION
         THEAD
             TR,TD,TH
         TBODY
@@ -38,10 +56,13 @@
             TR,TD,TH
     -->
     <table>
+        <caption> <!--legenda/titulo-->
+            População das unidades federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -155,10 +176,20 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>210.147.125</strong></td>
         </tfoot>
     </table>
+    <!--Só para mostrar que o topo vai correr junto com a tabela e terminar com ela-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto maiores in nostrum beatae tenetur expedita provident dignissimos quam velit vitae obcaecati eius distinctio asperiores ad, sapiente magni sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officia necessitatibus perferendis autem doloremque maiores architecto incidunt vero harum facere minus consequatur, ab, sapiente commodi fugiat error possimus illo doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cum, eius nostrum deserunt corrupti corporis reprehenderit non vitae quae dolor totam sint excepturi iure, incidunt sed consectetur iste ratione inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum, optio veritatis neque delectus minus qui soluta expedita dolores at nostrum rerum aperiam molestias eligendi! Eum sapiente inventore beatae perspiciatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, asperiores, error laboriosam nobis iste unde cum corporis tenetur iusto quos eum obcaecati ipsum eaque minus iure. Saepe vero minus placeat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto maiores in nostrum beatae tenetur expedita provident dignissimos quam velit vitae obcaecati eius distinctio asperiores ad, sapiente magni sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officia necessitatibus perferendis autem doloremque maiores architecto incidunt vero harum facere minus consequatur, ab, sapiente commodi fugiat error possimus illo doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cum, eius nostrum deserunt corrupti corporis reprehenderit non vitae quae dolor totam sint excepturi iure, incidunt sed consectetur iste ratione inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum, optio veritatis neque delectus minus qui soluta expedita dolores at nostrum rerum aperiam molestias eligendi! Eum sapiente inventore beatae perspiciatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, asperiores, error laboriosam nobis iste unde cum corporis tenetur iusto quos eum obcaecati ipsum eaque minus iure. Saepe vero minus placeat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto maiores in nostrum beatae tenetur expedita provident dignissimos quam velit vitae obcaecati eius distinctio asperiores ad, sapiente magni sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officia necessitatibus perferendis autem doloremque maiores architecto incidunt vero harum facere minus consequatur, ab, sapiente commodi fugiat error possimus illo doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cum, eius nostrum deserunt corrupti corporis reprehenderit non vitae quae dolor totam sint excepturi iure, incidunt sed consectetur iste ratione inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum, optio veritatis neque delectus minus qui soluta expedita dolores at nostrum rerum aperiam molestias eligendi! Eum sapiente inventore beatae perspiciatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, asperiores, error laboriosam nobis iste unde cum corporis tenetur iusto quos eum obcaecati ipsum eaque minus iure. Saepe vero minus placeat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto maiores in nostrum beatae tenetur expedita provident dignissimos quam velit vitae obcaecati eius distinctio asperiores ad, sapiente magni sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officia necessitatibus perferendis autem doloremque maiores architecto incidunt vero harum facere minus consequatur, ab, sapiente commodi fugiat error possimus illo doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cum, eius nostrum deserunt corrupti corporis reprehenderit non vitae quae dolor totam sint excepturi iure, incidunt sed consectetur iste ratione inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum, optio veritatis neque delectus minus qui soluta expedita dolores at nostrum rerum aperiam molestias eligendi! Eum sapiente inventore beatae perspiciatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, asperiores, error laboriosam nobis iste unde cum corporis tenetur iusto quos eum obcaecati ipsum eaque minus iure. Saepe vero minus placeat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto maiores in nostrum beatae tenetur expedita provident dignissimos quam velit vitae obcaecati eius distinctio asperiores ad, sapiente magni sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officia necessitatibus perferendis autem doloremque maiores architecto incidunt vero harum facere minus consequatur, ab, sapiente commodi fugiat error possimus illo doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cum, eius nostrum deserunt corrupti corporis reprehenderit non vitae quae dolor totam sint excepturi iure, incidunt sed consectetur iste ratione inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum, optio veritatis neque delectus minus qui soluta expedita dolores at nostrum rerum aperiam molestias eligendi! Eum sapiente inventore beatae perspiciatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, asperiores, error laboriosam nobis iste unde cum corporis tenetur iusto quos eum obcaecati ipsum eaque minus iure. Saepe vero minus placeat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto maiores in nostrum beatae tenetur expedita provident dignissimos quam velit vitae obcaecati eius distinctio asperiores ad, sapiente magni sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officia necessitatibus perferendis autem doloremque maiores architecto incidunt vero harum facere minus consequatur, ab, sapiente commodi fugiat error possimus illo doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cum, eius nostrum deserunt corrupti corporis reprehenderit non vitae quae dolor totam sint excepturi iure, incidunt sed consectetur iste ratione inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum, optio veritatis neque delectus minus qui soluta expedita dolores at nostrum rerum aperiam molestias eligendi! Eum sapiente inventore beatae perspiciatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, asperiores, error laboriosam nobis iste unde cum corporis tenetur iusto quos eum obcaecati ipsum eaque minus iure. Saepe vero minus placeat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto maiores in nostrum beatae tenetur expedita provident dignissimos quam velit vitae obcaecati eius distinctio asperiores ad, sapiente magni sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officia necessitatibus perferendis autem doloremque maiores architecto incidunt vero harum facere minus consequatur, ab, sapiente commodi fugiat error possimus illo doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cum, eius nostrum deserunt corrupti corporis reprehenderit non vitae quae dolor totam sint excepturi iure, incidunt sed consectetur iste ratione inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum, optio veritatis neque delectus minus qui soluta expedita dolores at nostrum rerum aperiam molestias eligendi! Eum sapiente inventore beatae perspiciatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, asperiores, error laboriosam nobis iste unde cum corporis tenetur iusto quos eum obcaecati ipsum eaque minus iure. Saepe vero minus placeat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto maiores in nostrum beatae tenetur expedita provident dignissimos quam velit vitae obcaecati eius distinctio asperiores ad, sapiente magni sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officia necessitatibus perferendis autem doloremque maiores architecto incidunt vero harum facere minus consequatur, ab, sapiente commodi fugiat error possimus illo doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cum, eius nostrum deserunt corrupti corporis reprehenderit non vitae quae dolor totam sint excepturi iure, incidunt sed consectetur iste ratione inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum, optio veritatis neque delectus minus qui soluta expedita dolores at nostrum rerum aperiam molestias eligendi! Eum sapiente inventore beatae perspiciatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, asperiores, error laboriosam nobis iste unde cum corporis tenetur iusto quos eum obcaecati ipsum eaque minus iure. Saepe vero minus placeat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto maiores in nostrum beatae tenetur expedita provident dignissimos quam velit vitae obcaecati eius distinctio asperiores ad, sapiente magni sequi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officia necessitatibus perferendis autem doloremque maiores architecto incidunt vero harum facere minus consequatur, ab, sapiente commodi fugiat error possimus illo doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cum, eius nostrum deserunt corrupti corporis reprehenderit non vitae quae dolor totam sint excepturi iure, incidunt sed consectetur iste ratione inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum, optio veritatis neque delectus minus qui soluta expedita dolores at nostrum rerum aperiam molestias eligendi! Eum sapiente inventore beatae perspiciatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, asperiores, error laboriosam nobis iste unde cum corporis tenetur iusto quos eum obcaecati ipsum eaque minus iure. Saepe vero minus placeat!</p>
     
 </body>
 </html>
